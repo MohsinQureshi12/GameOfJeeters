@@ -1,0 +1,58 @@
+@import url(https://db.onlinewebfonts.com/c/2da952d097bffd198ec0f0aa3fdd6804?family=JejuHallasan);
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Hallasan&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.font-jeju-hallasan {
+  font-family: 'Jeju Hallasan', cursive;
+}
+
+/* App.css */
+
+/* Hide the buttons and center the logo on mobile view */
+@media (max-width: 767px) {
+  .hidden {
+    display: none;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  .order-3 {
+    order: 3;
+  }
+
+  .w-full.items-center {
+    align-items: center;
+  }
+}
+/* General styles */
+.text-container, .image-container img {
+  position: static; /* Default position for desktop view */
+  margin-bottom: 0; /* Default margin for desktop view */
+}
+
+/* Mobile specific styles */
+@media (max-width: 767px) {
+  .text-container {
+    /* position: absolute; */
+    /* left: 35%; */
+    /* top: 2%; */
+    margin-bottom: 680px;
+  }
+
+  .image-container img {
+    position: relative;
+    top: 17%;
+    left: 40%;
+  }
+}
+
